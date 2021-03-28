@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="88.914385">
-<testcase classname="Deal Data Feature" name="Free CRM Create a new deal scenario" time="88.914385">
-<system-out><![CDATA[Given user is already on Login Page.........................................passed
-When title of Login Page is FreeCRM.........................................passed
-Then user clicks on login button first time.................................passed
-Then user enters username and password......................................passed
-Then user clicks on login button............................................passed
-Then user is on home page...................................................passed
-Then user moves to new deal page............................................passed
-Then user enters deal details...............................................passed
-Then Close the browser......................................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="0.317188">
+<testcase classname="Free CRM application testing" name="Login with correct username and correct password" time="0.316707">
+<system-out><![CDATA[Given This is a valid login test............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM application testing" name="Create a deal" time="0.000095">
+<system-out><![CDATA[Given This is a deal test case..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM application testing" name="Verify left panel links" time="0.000141">
+<system-out><![CDATA[Given clicking on left panel links..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM application testing" name="Search a case" time="0.000113">
+<system-out><![CDATA[Given This is a search case test............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM application testing" name="Search a task" time="0.000132">
+<system-out><![CDATA[Given This is a search task test............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
