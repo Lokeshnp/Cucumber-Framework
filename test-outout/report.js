@@ -1,165 +1,231 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("D:/Automation/code/Cucumber-Framework/src/main/java/Features/tagging.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("D:/Automation/code/Cucumber-Framework/src/main/java/Features/taggedhooks.feature");
 formatter.feature({
-  "line": 2,
-  "name": "Free CRM application testing",
+  "line": 1,
+  "name": "Test Tagged Hooks",
   "description": "",
-  "id": "free-crm-application-testing",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@FunctionalTest"
-    }
-  ]
+  "id": "test-tagged-hooks",
+  "keyword": "Feature"
+});
+formatter.before({
+  "duration": 119400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 90900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 44600,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 5,
-  "name": "Login with correct username and correct password",
+  "line": 4,
+  "name": "This is First test",
   "description": "",
-  "id": "free-crm-application-testing;login-with-correct-username-and-correct-password",
+  "id": "test-tagged-hooks;this-is-first-test",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 4,
-      "name": "@SmokeTest"
-    },
-    {
-      "line": 4,
-      "name": "@RegressionTest"
+      "line": 3,
+      "name": "@First"
     }
   ]
+});
+formatter.step({
+  "line": 5,
+  "name": "this is the first step",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 6,
-  "name": "This is a valid login test",
-  "keyword": "Given "
+  "name": "this is the second step",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "this is the third step",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "TaggingStepDefinition.this_is_a_valid_login_test()"
+  "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
 });
 formatter.result({
-  "duration": 316707300,
+  "duration": 76386500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
+});
+formatter.result({
+  "duration": 58700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
+});
+formatter.result({
+  "duration": 61600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 53900,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 52000,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 276100,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 134900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 84400,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 89700,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 17,
-  "name": "Create a deal",
+  "line": 10,
+  "name": "This is Second test",
   "description": "",
-  "id": "free-crm-application-testing;create-a-deal",
+  "id": "test-tagged-hooks;this-is-second-test",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 16,
-      "name": "@SmokeTest"
-    },
-    {
-      "line": 16,
-      "name": "@RegressionTest"
+      "line": 9,
+      "name": "@Second"
     }
   ]
+});
+formatter.step({
+  "line": 11,
+  "name": "this is the first step",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 12,
+  "name": "this is the second step",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 13,
+  "name": "this is the third step",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
+});
+formatter.result({
+  "duration": 230100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
+});
+formatter.result({
+  "duration": 208900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
+});
+formatter.result({
+  "duration": 207200,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 250700,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 169500,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 144900,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 807200,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 304500,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 180400,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 16,
+  "name": "This is Third test",
+  "description": "",
+  "id": "test-tagged-hooks;this-is-third-test",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 15,
+      "name": "@Third"
+    }
+  ]
+});
+formatter.step({
+  "line": 17,
+  "name": "this is the first step",
+  "keyword": "Given "
 });
 formatter.step({
   "line": 18,
-  "name": "This is a deal test case",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "TaggingStepDefinition.this_is_a_deal_test_case()"
-});
-formatter.result({
-  "duration": 95300,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 29,
-  "name": "Verify left panel links",
-  "description": "",
-  "id": "free-crm-application-testing;verify-left-panel-links",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 28,
-      "name": "@SmokeTest"
-    },
-    {
-      "line": 28,
-      "name": "@RegressionTest"
-    }
-  ]
+  "name": "this is the second step",
+  "keyword": "When "
 });
 formatter.step({
-  "line": 30,
-  "name": "clicking on left panel links",
-  "keyword": "Given "
+  "line": 19,
+  "name": "this is the third step",
+  "keyword": "Then "
 });
 formatter.match({
-  "location": "TaggingStepDefinition.clicking_on_left_panel_links()"
+  "location": "TaggedHooksStepDefinition.this_is_the_first_step()"
 });
 formatter.result({
-  "duration": 141300,
+  "duration": 1069200,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 41,
-  "name": "Search a case",
-  "description": "",
-  "id": "free-crm-application-testing;search-a-case",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 40,
-      "name": "@SmokeTest"
-    },
-    {
-      "line": 40,
-      "name": "@RegressionTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 42,
-  "name": "This is a search case test",
-  "keyword": "Given "
-});
 formatter.match({
-  "location": "TaggingStepDefinition.this_is_a_search_case_test()"
+  "location": "TaggedHooksStepDefinition.this_is_the_second_step()"
 });
 formatter.result({
-  "duration": 113500,
+  "duration": 192000,
   "status": "passed"
 });
-formatter.scenario({
-  "line": 45,
-  "name": "Search a task",
-  "description": "",
-  "id": "free-crm-application-testing;search-a-task",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 44,
-      "name": "@SmokeTest"
-    },
-    {
-      "line": 44,
-      "name": "@RegressionTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 46,
-  "name": "This is a search task test",
-  "keyword": "Given "
-});
 formatter.match({
-  "location": "TaggingStepDefinition.this_is_a_search_task_test()"
+  "location": "TaggedHooksStepDefinition.this_is_the_third_step()"
 });
 formatter.result({
-  "duration": 132300,
+  "duration": 216400,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 226200,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 169700,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 187600,
   "status": "passed"
 });
 });

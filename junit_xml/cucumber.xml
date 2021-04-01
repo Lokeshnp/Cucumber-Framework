@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="0.317188">
-<testcase classname="Free CRM application testing" name="Login with correct username and correct password" time="0.316707">
-<system-out><![CDATA[Given This is a valid login test............................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.082017">
+<testcase classname="Test Tagged Hooks" name="This is First test" time="0.077144">
+<system-out><![CDATA[Given this is the first step................................................passed
+When this is the second step................................................passed
+Then this is the third step.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Free CRM application testing" name="Create a deal" time="0.000095">
-<system-out><![CDATA[Given This is a deal test case..............................................passed
+<testcase classname="Test Tagged Hooks" name="This is Second test" time="0.00152">
+<system-out><![CDATA[Given this is the first step................................................passed
+When this is the second step................................................passed
+Then this is the third step.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Free CRM application testing" name="Verify left panel links" time="0.000141">
-<system-out><![CDATA[Given clicking on left panel links..........................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Free CRM application testing" name="Search a case" time="0.000113">
-<system-out><![CDATA[Given This is a search case test............................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Free CRM application testing" name="Search a task" time="0.000132">
-<system-out><![CDATA[Given This is a search task test............................................passed
+<testcase classname="Test Tagged Hooks" name="This is Third test" time="0.003353">
+<system-out><![CDATA[Given this is the first step................................................passed
+When this is the second step................................................passed
+Then this is the third step.................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
